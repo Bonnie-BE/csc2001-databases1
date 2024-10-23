@@ -1,0 +1,1 @@
+SELECT productVendor, productName, quantityInStock FROM products WHERE productVendor LIKE '%diecast%' AND quantityInStock < 2000;

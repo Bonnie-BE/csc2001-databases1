@@ -1,0 +1,1 @@
+SELECT E.firstName, E.lastName, SUM(P.amount) AS total FROM employees E JOIN customers C ON E.employeeNumber = C.salesRepEmployeeNumber JOIN payments P ON C.customerNumber = P.customerNumber WHERE E.officeCode = 7 GROUP BY E.employeeNumber, E.firstName, E.lastName;

@@ -1,0 +1,1 @@
+SELECT C.customerName AS CustomerName, ROUND(SUM(P.amount), 2) AS total FROM customers C INNER JOIN payments P ON C.customerNumber = P.customerNumber GROUP BY C.customerName;

@@ -1,0 +1,1 @@
+SELECT orderdetails.productCode AS productCode, SUM(orderdetails.quantityOrdered) AS Total FROM orderdetails GROUP BY orderdetails.productCode ORDER BY Total DESC LIMIT 1;

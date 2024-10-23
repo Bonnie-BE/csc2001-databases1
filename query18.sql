@@ -1,0 +1,1 @@
+SELECT E.email FROM employees E WHERE E.jobTitle = 'Sales Rep' AND E.employeeNumber IN (SELECT C.salesRepEmployeeNumber FROM customers C GROUP BY C.salesRepEmployeeNumber HAVING COUNT(*) < (SELECT COUNT(*) FROM customers WHERE salesRepEmployeeNumber = 1166));

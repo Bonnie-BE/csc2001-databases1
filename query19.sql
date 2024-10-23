@@ -1,0 +1,1 @@
+SELECT SUM(priceEach*quantityOrdered) AS totalCost FROM orderdetails WHERE orderNumber IN (SELECT orderNumber FROM orders WHERE customerNumber = 121);
