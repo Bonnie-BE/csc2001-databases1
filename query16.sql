@@ -1,0 +1,1 @@
+SELECT P.productName, P.quantityInStock, PL.textDescription FROM products P JOIN productlines PL ON P.productLine = PL.productLines WHERE P.quantityInStock < 100;

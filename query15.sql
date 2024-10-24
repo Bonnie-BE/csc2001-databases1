@@ -1,0 +1,1 @@
+SELECT C.customerName, C.phone FROM customers C LEFT JOIN payments P ON C.customerNumber = P.customerNumber WHERE P.customerNumber IS NULL;
